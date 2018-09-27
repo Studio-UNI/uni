@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Page de contact</h1>
+    <h1 class="test">Page de contact</h1>
   </div>
 </template>
 
@@ -10,6 +10,5 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
 </style>

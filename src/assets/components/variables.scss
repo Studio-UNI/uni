@@ -1,0 +1,156 @@
+//               -COULEURS
+// ---------------------------------------
+
+// Couleurs principales
+
+$main-color: #f1621f; // Couleur principale (orange)
+$secondary-color: #60c2c2; // Couleur secondaire (bleu)
+
+// Teintes principales
+
+$main-color-light: #f1621f;
+$secondary-color-light: #60c2c2;
+
+// Contrastes
+
+$lightgrey: #D9E4E4;
+$white: #f8f8f8;
+$black: #1e1e1e;
+$grey: rgb(117, 128, 128);
+
+// Couleurs assignés à des éléments html
+
+$link-color: $black;
+$body-bg: $white;
+
+
+//               -TRANSITIONS
+// ---------------------------------------
+
+$quick-transition: .2s ease;
+$main-transition: .4s ease;
+$slow-transition: .8s ease;
+$secondary-transition: .6s ease;
+
+
+
+
+//                 -SHADOWS
+// ---------------------------------------
+
+$shadow-xs: 0 3px 6px rgba(0,0,0,0.16);
+$shadow-s: 0 10px 20px rgba(0,0,0,0.19);
+$shadow-m: 0 14px 28px rgba(0,0,0,0.25);
+$shadow-l: 0 19px 38px rgba(0,0,0,0.30);
+
+
+
+
+//                -BREAKPOINTS
+// ---------------------------------------
+
+@mixin screen-s{
+  @media screen and (min-width: 375px) {@content}
+}
+@mixin screen-m{
+  @media screen and (min-width: 599px) {@content}
+}
+@mixin screen-l{
+  @media screen and (min-width: 899px) {@content}
+}
+@mixin screen-xl{
+  @media screen and (min-width: 1199px) {@content}
+}
+@mixin screen-xxl{
+  @media screen and (min-width: 1699px) {@content}
+}
+
+
+
+
+//                  -SPACES
+// ---------------------------------------
+
+$s-xs: 4px;
+$s-s: 8px;
+$s-m: 16px;
+$s-l: 24px;
+$s-xl: 32px;
+$s-xxl: 48px;
+
+//                  -LAYOUT
+// ---------------------------------------
+
+$container-max-width: 1400px;
+$grid-columns: 6;
+$gutter-s: $s-l;
+$gutter-m: $s-xxl;
+
+
+//                  -FONTS
+// ---------------------------------------
+
+
+$main-font-family: 'Gotham-Book', Roboto, -apple-system, BlinkMacSystremFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+$bold-font-family: 'Gotham-Bold', Roboto, -apple-system, BlinkMacSystremFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+
+// Taille de police
+
+$font-size-xxs: .65rem;
+$font-size-xs: .8rem;
+$font-size-s: 1rem;
+$font-size-sm: 1.3rem;
+$font-size-m: 1.6rem;
+$font-size-l: 2.4rem;
+$font-size-xl: 3rem;
+
+// Hauteur de ligne
+
+$line-height-xxs: 1rem;
+$line-height-xs: 1.125rem;
+$line-height-s: 1.375rem;
+$line-height-sm: 1.5rem;
+$line-height-m: 2rem;
+$line-height-l: 3rem;
+$line-height-xl: 3.6rem;
+
+// Mixin typographique
+
+%type-xxs{
+  font-size: $font-size-xxs;
+  line-height:$line-height-xxs;
+  font-weight:100;
+}
+
+%type-xs{
+  font-size: $font-size-xs;
+  line-height:$line-height-xs;
+  font-weight:100;
+}
+%type-s{
+  font-size: $font-size-s;
+  line-height:$line-height-s;
+  font-weight:400;
+}
+
+%type-sm{
+  font-size: $font-size-sm;
+  line-height:$line-height-sm;
+  font-weight:400;
+}
+%type-m{
+  font-size: $font-size-m;
+  line-height:$line-height-m;
+  font-weight:400;
+}
+%type-l{
+  font-size: $font-size-l;
+  line-height:$line-height-l;
+  font-weight:900;
+}
+%type-xl{
+  font-size: $font-size-xl;
+  line-height:$line-height-xl;
+  font-weight:900;
+}
+

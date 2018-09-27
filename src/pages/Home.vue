@@ -10,15 +10,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
-  :root{
-    --test: red;
-  }
-  div{
-    background-color: var(--test);
-    h1{
-      color: blue;
-    }
-  }
+<style>
 
 </style>

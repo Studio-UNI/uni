@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="assets/images/logo.png">
     <div class="hello">
       <router-link :to="{name:'Home'}">Accueil</router-link>
       <router-link :to="{name:'Projets'}">Projets</router-link>
@@ -17,7 +17,6 @@ export default {
   name: 'App'
 }
 </script>
-
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

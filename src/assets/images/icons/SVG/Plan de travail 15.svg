@@ -1,0 +1,24 @@
+<svg id="opla" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 769.91 333.17">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 170.91px;
+        fill: #fff;
+        font-family: SignericaMedium, Signerica Medium;
+      }
+
+      .cls-2 {
+        fill: url(#Dégradé_sans_nom_85);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_85" data-name="Dégradé sans nom 85" x1="229.44" y1="139.51" x2="508.46" y2="139.51" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dea04b"/>
+      <stop offset="1" stop-color="#ffc20c"/>
+    </linearGradient>
+  </defs>
+  <title>Plan de travail 15</title>
+  <g>
+    <text class="cls-1" transform="translate(10.95 191.06) scale(1.33 1)">opla</text>
+    <path class="cls-2" d="M369,279C292,279,229.44,216.43,229.44,139.51S292,0,369,0,508.46,62.58,508.46,139.51,445.88,279,369,279Zm0-261A121.51,121.51,0,1,0,490.46,139.51,121.65,121.65,0,0,0,369,18Z"/>
+  </g>
+</svg>

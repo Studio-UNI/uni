@@ -1,0 +1,178 @@
+// ********************************************************************************
+//  MAIN STYLE   MAIN STYLE   MAIN STYLE   MAIN STYLE   MAIN STYLE   MAIN STYLE
+// ********************************************************************************
+
+
+// Style de base, construit en mobile first.
+// Même si le style est écrit sur une seule et même page CSS. Il est construit de manière atomique
+// On retoruve toujours notre structure :
+//
+// - BASE ET VARIABLES
+// -- ELEMENTS (ensemble des éléments du site ex: boutons)
+// --- BLOCKS (groupe d'éléments qui composent les pages)
+
+
+// ********************************************************************************
+// ********************************************************************************
+
+//     -BASE   -BASE    -BASE    -BASE    -BASE    -BASE    -BASE    -BASE    -BASE
+
+// ********************************************************************************
+// ********************************************************************************
+
+
+
+@import 'components/variables.scss';
+@import 'components/reset.scss';
+
+.darkBackground{
+    background: $black;
+    li,i,p,h1,h2,h3,h4,h5,h6{
+        color:$white;
+    }
+}
+
+//                  -FONTS
+// ---------------------------------------
+
+
+// Font face
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url(fonts/gotham-bold.ttf);
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url(fonts/gotham-book.ttf);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+li,p,i,em,a,span,figcaption,label,input,textarea{
+font-family: $main-font-family;
+}
+
+h1,h2,h3,h4,h5,h6,b{
+    font-family: $bold-font-family;
+}
+
+p,span,a,figcaption,label,input,textarea{
+    @extend %type-xs;
+}
+
+h1{
+    @extend %type-sm;
+}
+h2{
+    @extend %type-sm;
+}
+h3,h4,h5,h6{
+    @extend %type-s;
+}
+h2.bigTitle{
+  font-size:14vw;
+  line-height:18vw;
+}
+
+
+//                  -LAYOUT
+// ---------------------------------------
+/*
+.container{
+	max-width: $container-max-width;
+	margin: 0 auto;
+    padding:0 $s-s*1.5;
+    &--lightgrey{
+        background: $lightgrey;
+    }
+}
+.row{
+	display:flex;
+	max-width:100%;
+	flex-wrap:wrap;
+}
+.row >*{
+    margin-bottom: $s-xl;
+}
+.row > *:last-child{margin-right:0; margin-bottom:0;}
+
+@for $i from 1 through $grid-columns{
+	$percent: 100/$grid-columns*$i ;
+	$g: $gutter-s/2;
+	.col-xs-#{$i}{width: calc(#{$percent}% - (#{$g})); padding-right:#{$gutter-s};}
+}
+.col-xs-6{width:100%;margin-right:0};
+@for $i from 1 through $grid-columns{
+	$percent: 100/$grid-columns*$i;
+	$g: $gutter-s - $gutter-s/$i;
+	.col-s-#{$i}{@include screen-s{width: calc(#{$percent}% - (#{$g}));padding-right:#{$gutter-s};}}
+}
+@for $i from 1 through $grid-columns{
+	$percent: 100/$grid-columns*$i;
+	$g: $gutter-m - $gutter-m/$i;
+	.col-m-#{$i}{@include screen-m{width: calc(#{$percent}% - (#{$g}));padding-right:#{$gutter-m};}}
+}
+@for $i from 1 through $grid-columns{
+  $percent: 100/$grid-columns*$i;
+  $g: $gutter-m - $gutter-m/$i;
+  .col-l-#{$i}{@include screen-l{width: calc(#{$percent}% - (#{$g}));padding-right:#{$gutter-m};}}
+}
+@media screen and (min-width:375px){
+    .container{
+        padding:0 $s-l;
+    }
+}
+
+
+// Layout for full col
+
+.row--full{
+  display:grid;
+  grid-template-columns: 1fr;
+  .boxed{
+    padding:12px;
+  }
+  .place-center{
+    place-self:center;
+  }
+}*/
+
+
+//                -ANIMATIONS
+// ---------------------------------------
+
+.inView{
+    &--fadeIn{
+        opacity:0;
+        transform:translateY(50px);
+        transition:.6s transform, .8s opacity;
+    }
+    &--fadeIn--viewed{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+
+// ********************************************************************************
+// ********************************************************************************
+
+//     IMPORT   IMPORT    IMPORT     IMPORT   IMPORT   IMPORT  IMPORT
+
+// ********************************************************************************
+// ********************************************************************************
+
+
+@import 'components/elements/*/style.scss';
+@import 'components/blocks/*/style.scss';
+@import 'components/pages/*/style.scss';
+
+
+
+
+
+
